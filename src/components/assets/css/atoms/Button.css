@@ -1,0 +1,12 @@
+/* Example */
+.btn {
+  background: linear-gradient(to right, rgb(130, 228, 90), rgb(5, 137, 43));
+  color: white;
+  border-radius: 5px;
+  /* margin-left: 40%; */
+  width: 50%;
+  height: 30px;
+  font-weight: bold;
+  border-width: 1px;
+
+}

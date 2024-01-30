@@ -1,0 +1,47 @@
+/* SwiperSlider.css */
+.swiper-slider-container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    height: 550px;
+    margin: auto;
+    padding-top: 10%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .swip-img {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .swiper-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .swiper-navigation button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .swiper-slider-container {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .swiper-slider-container {
+      width: 100%;
+    }
+  }
+  

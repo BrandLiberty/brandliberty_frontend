@@ -1,0 +1,30 @@
+/* Add these styles to your CSS file */
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #393939;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s;
+    z-index: 2;
+  }
+  
+  .scroll-top-btn.visible {
+    display: block;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .scroll-top-btn {
+      bottom: 10px;
+      right: 10px;
+      font-size: 7px;
+    }
+  }
+  

@@ -1,0 +1,215 @@
+/* Navbar style */
+.navbar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    font-size: 1rem;
+    height: 83px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(4, 48, 73, 0.4);
+    background-color: rgb(132, 132, 132);
+    color: black;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .3s ease-in;
+    overflow: hidden;
+}
+
+.navbar-bg{
+    background-color: #5B5B5B;
+}
+
+/* List of all pages link style */
+
+.navbar-menu {
+    list-style: none;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+    margin: 0px 3vw 0px 0vw;
+    position: relative;
+}
+
+.navbar-menu li .link1 {
+    text-decoration: none;
+    color: rgb(33 31 111);
+    display: block;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.head-img-1 {
+    width: 45px;
+    height: 55px;
+}
+
+.nav-logo {
+    padding-left: 100px;
+}
+
+.nav-links {
+    padding-right: 50px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+
+.nav-links .link1 {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links .link1:hover {
+    color: red;
+    
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(to right, rgb(90, 141, 228), rgba(27, 5, 137, 0.881));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 10rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2px;
+    width: 10rem;
+}
+
+.dropdown-content .link1 {
+    color: #fff;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.dropdown-icon {
+    margin-left: 0.2rem;
+}
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        text-align: center;
+        z-index: 5;
+        transform: translateX(-100%);
+       
+    }
+    .nav-links .link1{
+        color: black;
+    }
+    
+    .navbar{
+        transition:none;
+        background-color: #fff;
+    }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 25px;
+        transform: translateX(0);
+        height: 265px;
+
+    }
+
+    .hamburger-icon {
+        display: block;
+        margin-right: 10%;
+    }
+
+    .navbar-menu {
+        list-style: none;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        color: rgb(33 31 111);
+        padding: 0;
+        height: 26px;
+        margin: 0;
+    }
+
+    .navbar-menu .link1 {
+        border-bottom: 1px solid rgb(33 31 111);
+    }
+
+    .navbar-menu li .link1 {
+        color: rgb(33 31 111);
+
+    }
+
+    .dropdown-content {
+        width: 90%;
+    }
+
+    .dropdown {
+        width: 8rem;
+    }
+
+    .dropdown-content {
+        margin-left: 92%;
+    }
+
+    .nav-logo {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 866px) {
+   
+    .campdetail-content {
+        margin-top: 5%;
+    }
+
+    .campdetail-heading {
+        margin-top: 10%;
+    }
+
+    .dropdown-content {
+        width: 10rem;
+    }
+}
