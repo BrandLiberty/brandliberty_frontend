@@ -1,43 +1,43 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { NavLink,Link } from 'react-router-dom';
 import '../assets/css/navigation/navbar.css';
-import { Link } from 'react-router-dom';
-import Logo from "../assets/images/brand_logo.png";
+import logo from "../assets/images/brand_logo.png";
+import { scrollToTop } from '../utils/scrollToTop';
 
-// const Navbar1 = () => {
-  const Navbar1 = ({ isHomePage }) => {
+const Navbar1 = ({ isHomePage }) => {
     const [isNavOpen, setIsNavOpen] = useState(false);
+
     const toggleNav = () => {
         setIsNavOpen(!isNavOpen);
     }
 
-   
+    const [color, setColor] = useState(false);
 
-    const [color, setColor] = useState(false)
     const changeColor = () => {
         if (window.scrollY >= 90) {
-            setColor(true)
+            setColor(true);
         } else {
-            setColor(false)
+            setColor(false);
         }
     }
-    window.addEventListener('scroll', changeColor)
+
+    window.addEventListener('scroll', changeColor);
 
     return (
         <nav className={color || isHomePage ? 'navbar navbar-bg' : 'navbar'}>
             <div className="nav-logo">
-                {/* <p className="head-img-1">Logo</p> */}
-                <img src={Logo} className="head-img-1" alt={"logo"} />
+                <Link to="/" onClick={() => { scrollToTop() }}><img src={logo} className="head-img-1" alt={"logo"} /></Link>
             </div>
             <div className={`nav-links ${isNavOpen ? 'open' : ''}`} >
-                <Link className="link1" to="/" onClick={() => { setIsNavOpen(false); }} >Home</Link>
-                <Link className="link1" to="/about" onClick={() => { setIsNavOpen(false); }}>About </Link>
-                <Link className="link1" to="/services" onClick={() => { setIsNavOpen(false); }}>services</Link>
-                <Link className="link1" to="/blogs" onClick={() => { setIsNavOpen(false); }}>Blogs</Link>
-                <Link className="link1" to="/gallery" onClick={() => { setIsNavOpen(false); }}>Gallery</Link>
-                <Link className="link1" to="/career" onClick={() => { setIsNavOpen(false); }}>Career</Link>
-                <Link className="link1" to="/contact" onClick={() => { setIsNavOpen(false); }}>Contact Us</Link>
+                <NavLink exact to="/" className="link1" activeClassName="active" onClick={() => { setIsNavOpen(false);scrollToTop() }}>Home</NavLink>
+                <NavLink to="/about" className="link1" activeClassName="active" onClick={() => { setIsNavOpen(false); scrollToTop()}}>About</NavLink>
+                <NavLink to="/services" className="link1" activeClassName="active" onClick={() => { setIsNavOpen(false); scrollToTop()}}>Services</NavLink>
+                <NavLink to="/blogs" className="link1" activeClassName="active" onClick={() => { setIsNavOpen(false);scrollToTop() }}>Blogs</NavLink>
+                <NavLink to="/gallery" className="link1" activeClassName="active" onClick={() => { setIsNavOpen(false); scrollToTop()}}>Gallery</NavLink>
+                <NavLink to="/career" className="link1" activeClassName="active" onClick={() => { setIsNavOpen(false); scrollToTop()}}>Career</NavLink>
+                <NavLink to="/contact" className="link1" activeClassName="active" onClick={() => { setIsNavOpen(false); scrollToTop()}}>Contact Us</NavLink>
             </div>
             <div className="hamburger-icon" onClick={toggleNav}>
                 <FontAwesomeIcon icon={faBars} />
@@ -45,7 +45,5 @@ import Logo from "../assets/images/brand_logo.png";
         </nav>
     )
 }
-
-
 
 export default Navbar1;

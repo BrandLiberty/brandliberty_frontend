@@ -1,0 +1,247 @@
+.career-main{
+    height: 100%;
+    width: 100%;
+}
+.c-sec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-bottom: 2%;
+}
+.c-head{
+    width: 40%;
+}
+.c-head p{
+    font-size: 1.3rem;
+}
+.c-head h1{
+    font-family: "Poppins", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.c-head h2{
+    font-size: 1.5rem;
+}
+.c-img{
+    width: 50%; 
+}
+.c-img img{
+    
+    height: 430px;
+    width: 600px;
+}
+
+.c-sec2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-bottom: 2%;
+}
+.c-img2{
+    width: 50%; 
+}
+.c-img2 img{
+    
+    height: 430px;
+    width: 600px;
+}
+.c-head2{
+    width: 40%;
+}
+.c-head2 p{
+    font-size: 1.3rem;
+}
+
+.c-head2 h2{
+    font-family: "Poppins", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.hw-hire{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+
+.hw-hire img{
+    height: 480px;
+    width: 850px;
+}
+
+
+/* openings and form */
+.openings {
+    height: 100%;
+    width: 100%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+.op-container h3{
+    font-size: 1.3rem;
+    font-weight:600;
+}
+
+.op-container{
+    height: 100%;
+    width: 50%;
+}
+
+.form{
+    padding-top: 6%;
+}
+
+.question {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the collapsed and expanded icons */
+  .icon-show,
+  .icon-close {
+    margin-left: 5px;
+  }
+  
+  /* Style for the blog box */
+  .blog-box1 {
+    width: 433px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
+}
+
+  
+  /* Style for the blog text */
+  .blog-text1 {
+    font-size: 16px;
+  }
+  
+  
+
+
+@media (max-width: 1200px){
+    .c-img img{
+     height: 400px;
+     width: 500px;
+    }
+    .c-img2 img{
+        height: 400px;
+        width: 500px;
+       }
+ }
+ @media (max-width: 1024px){
+     .c-img img{
+      height: 325px;
+      width: 360px;
+ 
+     }
+     .c-img2 img{
+        height: 325px;
+        width: 360px;
+   
+       }
+   
+  }
+  @media (max-width: 914px){
+
+    .hw-hire img{
+        height: 480px;
+        width: 800px;
+    }
+    .openings {
+        flex-direction: column;
+    }
+    .op-container h3{
+        padding-left: 3%;
+    }
+    .collapsed-question{
+        padding-left: 4%;
+        padding-bottom: 4%;
+    }
+    .row{
+        padding-left: 20%;
+    }
+    
+ }
+ 
+ @media (max-width: 768px){
+ 
+     .c-sec{
+         flex-direction: column;
+         align-items: center;
+         padding-left: 0;
+      }
+      .c-head{
+          width: 90%;
+      }
+      .c-head h2{
+          font-size: 2.1rem;
+      }
+
+      .c-head p{
+        font-size: 1.1rem;
+      }
+      .c-img{
+          width: 90%;
+        
+      }
+      .c-img img{
+         display: none;
+      }
+
+      .c-sec2{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+     }
+     .c-head2{
+         width: 90%;
+     }
+    
+     .c-head2 p{
+       font-size: 1.1rem;
+     }
+     .c-img2{
+         width: 90%;
+       
+     }
+     .c-img2 img{
+        display: none;
+     }
+
+     .hw-hire img{
+        height: 367px;
+        width: 600px;
+    }
+
+    .blog-box1{
+        width: 300px;
+    }
+   
+  
+ 
+ }
+
+ @media (max-width: 440px){
+
+    .c-head2 p{
+        font-size: 1.1rem;
+      }
+
+    .hw-hire img{
+        height: 243px;
+        width: 362px;
+    }
+    .row{
+        padding-left: 1%;
+    }
+ }

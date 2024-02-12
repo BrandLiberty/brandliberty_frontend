@@ -10,6 +10,7 @@ import Blog from './components/container/blog/Blog.js';
 import Gallery from './components/container/gallery/Gallery.js';
 import Career from './components/container/career/Career.js';
 import Contact from './components/container/contact/Contact.js';
+import It_sector from "./components/includes/It_sector.js";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Services />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/it-Sector" element={<It_sector />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />

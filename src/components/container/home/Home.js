@@ -8,15 +8,15 @@ import Img1 from '../../assets/images/home-img.png'
 import StarFiled from '../../common/StarField';
 import SwiperSlider from '../../common/SwiperSlider';
 import LogoSlider from '../../common/LogoSlider';
-import pvi1 from '../../assets/images/vision.jpg';
-import pvi2 from '../../assets/images/mission.jpg';
+import pvi1 from '../../assets/images/BLVision.jpg';
+import pvi2 from '../../assets/images/BLMission.jpg';
 import svi1 from '../../assets/images/logo/softwaredev.png';
-import svi2 from '../../assets/images/logo/web.png';
-import svi3 from '../../assets/images/logo/application-1.png';
-import svi4 from '../../assets/images/logo/smm.png';
-import svi5 from '../../assets/images/logo/sem.png';
-import svi6 from '../../assets/images/logo/seo.png';
-import svi7 from '../../assets/images/logo/emailm.png';
+import svi2 from '../../assets/images/logo/Web121.png';
+import svi3 from '../../assets/images/logo/AppUI11.png';
+import svi4 from '../../assets/images/logo/Socialmedia15.png';
+import svi5 from '../../assets/images/logo/SEO1.png';
+import svi6 from '../../assets/images/logo/BLSMO.png';
+import svi7 from '../../assets/images/logo/email01.png';
 import svi8 from '../../assets/images/logo/lead.png';
 import svi9 from '../../assets/images/logo/infuencer.png';
 import teci1 from '../../assets/images/html.png';
@@ -28,25 +28,26 @@ import video1 from '../../assets/images/video/video1.mp4'
 
 const Home = () => {
  
-
   return (
     <section className='home-p'>
       <div className='main-container'>
         <Navbar1 isHomePage={true} />
         <div className='home-banner'>
           <StarFiled />
+         
           <div className='baneer-con'>
-            <div className='main-para'>
+            <div className='main-para'data-aos="fade-right">
               Discover the world of<br />
               <span>" Brand Liberty "</span><br />
               Where IT & Digital Marketing Thrive!
 
             </div>
-            <div className='img-container'>
+            <div className='img-container' data-aos="fade-left">
               <img src={Img1} alt="" />
 
             </div>
           </div>
+         
           <div className='btn-1' >
             <button type="button" class="slide-btn" >
               Get the Quote
@@ -102,62 +103,62 @@ const Home = () => {
       {/* service-sec */}
       <div className='service-sec'>
         <div className='ser-text'>
-          <h2 className='section-heading2'>Services</h2>
-          <h1 data-aos="fade-right">Check our IT Services</h1>
+          <h2 className='section-heading2'>Check It</h2>
+          <h1 data-aos="fade-right">IT & Degital Services</h1>
           <p data-aos="fade-right">We are a leading IT solution and digital marketing company,empowering business with innovative technology and result- driven marketing strategies.</p>
           <div className='st'>
             <div className='sv-1'>
               <div data-aos="fade-left"><img src={svi1} className='sv-img1' />
                 <h3>Software Development</h3>
-                <a href="service">Learn More</a>
+                <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-2'>
               <div data-aos="fade-right"><img src={svi2} className='sv-img1' />
                 <h3>Web Development</h3>
-                <a href="service">Learn More</a>
+                <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-1'>
               <div data-aos="fade-left"><img src={svi3} className='sv-img1' />
                 <h3>Application Development</h3>
-                <a href="service">Learn More</a>
+                <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-2'>
               <div data-aos="fade-right"><img src={svi4} className='sv-img1' />
                 <h3>Social Media Management</h3>
-                <a href="service">Learn More</a>
+                <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-1'>
               <div data-aos="fade-left"><img src={svi5} className='sv-img1' />
-                <h3>Social Media Marketing</h3>
-                <a href="service">Learn More</a>
+                <h3>Search Engine Optimization</h3>
+                <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-2'>
               <div data-aos="fade-right"><img src={svi6} className='sv-img1' />
-                <h3>Social Media  Optimization</h3>
-                <a href="service">Learn More</a>
+                <h3>Social Media Optimization</h3>
+                <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-1'>
               <div data-aos="fade-left"><img src={svi7} className='sv-img1' />
                 <h3>Email Marketing</h3>
-                <a href="service">Learn More</a>
+                <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-2'>
               <div data-aos="fade-right"><img src={svi8} className='sv-img1' />
                 <h3>Lead Generation</h3>
-                <a href="service">Learn More</a>
+                <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-1'>
               <div data-aos="fade-left"><img src={svi9} className='sv-img1' />
                 <h3>Influencer Marketing</h3>
-                <a href="service">Learn More</a>
+                <a href="services">Learn More</a>
               </div>
             </div>
             
@@ -173,7 +174,7 @@ const Home = () => {
           <div className='at'data-aos="fade-up">
             We are a leading IT solution and digital marketing company,empowering business with innovative technology and result- driven marketing strategies.
           </div>
-          <div className='tech-container'>
+          <div className='tech-container' data-aos="flip-down">
           <div className='item-logo'>
             <img className='wt-i' src={teci1} alt="" />
           </div>
@@ -190,8 +191,8 @@ const Home = () => {
         </div>
         </div>
      
-
       </div>
+
       {/* who we are */}
       <div className='we-sec'>
         <div className='head-p'data-aos="fade-down">

@@ -15,16 +15,16 @@ const About = () => {
     // Fetch data from teamData.json or your API endpoint
     // In this example, we use a static array for simplicity
     const data = [
-      { id: 1, photo: teamMember1, name: 'John Doe', designation: 'CEO', linkedinUrl: '' },
-      { id: 2, photo: teamMember1, name: 'Jane Smith', designation: 'Lead Developer', linkedinUrl: '' },
-      { id: 3, photo: teamMember1, name: 'John Doe', designation: 'CEO', linkedinUrl: '' },
-      { id: 4, photo: teamMember1, name: 'Jane Smith', designation: 'Lead Developer', linkedinUrl: '' },
-      { id: 5, photo: teamMember1, name: 'John Doe', designation: 'CEO', linkedinUrl: '' },
-      { id: 6, photo: teamMember1, name: 'Jane Smith', designation: 'Lead Developer', linkedinUrl: '' },
-      { id: 7, photo: teamMember1, name: 'John Doe', designation: 'CEO', linkedinUrl: '' },
-      { id: 8, photo: teamMember1, name: 'Jane Smith', designation: 'Lead Developer', linkedinUrl: '' },
-      { id: 9, photo: teamMember1, name: 'John Doe', designation: 'CEO', linkedinUrl: '' },
-      { id: 10, photo: teamMember1, name: 'Jane Smith', designation: 'Lead Developer', linkedinUrl: '' },
+      { id: 1, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'CEO', linkedinUrl: '' },
+      { id: 2, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'Lead Developer', linkedinUrl: '' },
+      { id: 3, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'CEO', linkedinUrl: '' },
+      { id: 4, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'Lead Developer', linkedinUrl: '' },
+      { id: 5, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'CEO', linkedinUrl: '' },
+      { id: 6, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'Lead Developer', linkedinUrl: '' },
+      { id: 7, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'CEO', linkedinUrl: '' },
+      { id: 8, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'Lead Developer', linkedinUrl: '' },
+      { id: 9, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'CEO', linkedinUrl: '' },
+      { id: 10, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'Lead Developer', linkedinUrl: '' },
       // Add more team members as needed 
     ];
 
@@ -35,10 +35,10 @@ const About = () => {
     <div className='about-main'>
       <div className='ab-sec1'>
         <div className='ab-head'>
-          <h2 className='section-heading2'>About</h2>
+          <h2 className='section-heading2' data-aos="fade-down">About</h2>
           <h1 data-aos="fade-right">Delivering measurable results to Clients, Employees, and Vendors.</h1>
         </div>
-        <div className='ab-para' data-aos="fade-leaft">
+        <div className='ab-para'  data-aos="fade-left">
           Brand Liberty provides an extensive range of services, encompassing software development, web development, and application development,
           aimed at enhancing your business in the digital domain. With our team of skilled professionals,
           we dedicate our efforts to crafting resilient applications and websites that offer impeccable user experiences.
@@ -51,7 +51,7 @@ const About = () => {
       <div className='ab-sec2'>
         <div className='ab-head2'>
           <h2 data-aos="fade-right">Mission & Vision</h2>
-          <p >Brand Liberty provides an extensive range of services, encompassing software development,
+          <p data-aos="fade-right">Brand Liberty provides an extensive range of services, encompassing software development,
             web development, and application development, aimed at enhancing your business in the digital domain.
             With our team of skilled professionals, we dedicate our efforts to crafting resilient applications and websites
             that offer impeccable user experiences. Additionally, our specialized knowledge in social media management,
@@ -77,7 +77,7 @@ const About = () => {
       </div>
       <div className='team-sec'>
         <div className='team-container'>
-          <h2 className='section-heading' >Team</h2>
+          <h2 className='section-heading' data-aos="fade-down">Team</h2>
           <h1 data-aos="fade-down">Beyond the products we deliver, it's the dedication of our team that defines us.</h1>
           <div className="team-members">
             {teamMembers.map((member) => (

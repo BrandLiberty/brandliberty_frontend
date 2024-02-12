@@ -1,23 +1,29 @@
 /* Add these styles to your CSS file */
 
 .scroll-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #393939;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-    transition: opacity 0.3s;
-    z-index: 2;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #393939;
+  border: 1px solid rgb(131, 3, 3);
+  padding: 5px 10px;
+  border-radius: 26px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s;
+  z-index: 2;
   }
   
   .scroll-top-btn.visible {
     display: block;
+    color: #797979;
   }
+
+  .scroll-top-btn.visible:hover{
+    color: #e01f1d;
+  }
+  
   
   /* Responsive styles */
   @media screen and (max-width: 768px) {

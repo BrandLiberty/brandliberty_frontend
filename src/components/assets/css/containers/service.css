@@ -1,0 +1,151 @@
+.service-main {
+    height: 100%;
+    width: 100vw;
+}
+.service-main h2{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 3%;
+}
+
+.service-text {
+    font-family: "Poppins", serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 45vw;
+    padding-left: 28%;
+    font-size: 2.50rem;
+    font-weight: 400;
+}
+
+.service-container {
+    padding-top: 5%;
+}
+
+.s-sec1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.s-sec2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-right: 41%;
+}
+
+.s-con1 img {
+    height: 400px;
+    width: 650px;
+    border-radius: 10px;
+    border: 10px solid #f6f6f6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.s-con1 p,
+.s-con2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+}
+
+.s-con2 img {
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    border: 10px solid #f6f6f6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.s-con1 img:hover,
+.s-con2 img:hover{
+    transform: scale(1.1); 
+    transition: 0.6s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
+}
+
+
+
+@media (max-width: 1200px) {
+    .s-con1 img {
+        height: 350px;
+        width: 500px;
+    }
+    .s-con2 img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 914px) {
+    .s-con1 img {
+        height: 300px;
+        width: 450px;
+    }
+    .s-con2 img {
+        height: 300px;
+        width: 300px;
+    }
+    .s-con1 p,
+    .s-con2 p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-text {
+        width: 69vw;
+        padding-left: 17%;
+    }
+    .s-con1 img {
+        height: 250px;
+        width: 350px;
+    }
+    .s-con2 img {
+        height: 250px;
+        width: 250px;
+    }
+    .s-con1 p,
+    .s-con2 p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .service-text {
+        width: 69vw;
+        font-size: 1.9rem;
+    }
+    .s-sec1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+    .s-con1 img,
+    .s-con2 img {
+        height: 300px;
+        width: 370px;
+    }
+    
+    
+    .s-con1 p,
+    .s-con2 p {
+        font-size: 1.3rem;
+    }
+    .s-sec2 {
+        padding-right: 0%;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .s-con1 img,
+    .s-con2 img {
+        height: 274px;
+        width: 317px;
+    }
+    
+
+}

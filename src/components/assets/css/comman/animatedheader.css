@@ -1,0 +1,45 @@
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.main-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 30px;
+    }
+}
+
+/* Additional adjustments for even smaller screens */
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,37 @@
+/* PortfolioDetails.css */
+
+/* Container */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Portfolio Image */
+  .portfolio-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Portfolio Info */
+  .portfolio-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .portfolio-info h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .portfolio-info ul {
+    list-style: none;
+  }
+  
+  .portfolio-info ul li {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  

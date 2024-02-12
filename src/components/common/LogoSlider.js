@@ -10,7 +10,7 @@ import logo2 from '../assets/images/attachments/Ambar Foods Logo.png';
 // import logo3 from '../assets/images/attachments/hotel publiq darbar Logo .png';
 import logo4 from '../assets/images/attachments/Deshpande Kitchen.jpg';
 import logo5 from '../assets/images/attachments/vithu.png';
-import logo6 from '../assets/images/attachments/Divya Zesty Aroma.jpeg';
+import logo6 from '../assets/images/attachments/Divya_Zesty_Aroma-removebg-preview.png';
 import logo7 from '../assets/images/attachments/kaya sprit logo.png';
 import logo8 from '../assets/images/attachments/Socifly logo (1).png';
 import logo9 from '../assets/images/attachments/Food Mascot Logo (4).png';
