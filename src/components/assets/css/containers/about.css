@@ -1,6 +1,6 @@
 .about-main{
     height: 100%;
-    width: 100vw;
+    width: 100%;
 }
 .ab-sec1{
     display: flex;
@@ -186,6 +186,12 @@
         left: 0;
         width: 100%;
         height: 51%;
+    }
+    .team-name{
+        font-size: 0.6rem;
+    }
+    .team-designation{
+        font-size: 0.5rem;
     }
 
 }

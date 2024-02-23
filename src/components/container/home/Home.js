@@ -10,15 +10,14 @@ import SwiperSlider from '../../common/SwiperSlider';
 import LogoSlider from '../../common/LogoSlider';
 import pvi1 from '../../assets/images/BLVision.jpg';
 import pvi2 from '../../assets/images/BLMission.jpg';
-import svi1 from '../../assets/images/logo/softwaredev.png';
-import svi2 from '../../assets/images/logo/Web121.png';
-import svi3 from '../../assets/images/logo/AppUI11.png';
-import svi4 from '../../assets/images/logo/Socialmedia15.png';
-import svi5 from '../../assets/images/logo/SEO1.png';
-import svi6 from '../../assets/images/logo/BLSMO.png';
-import svi7 from '../../assets/images/logo/email01.png';
-import svi8 from '../../assets/images/logo/lead.png';
-import svi9 from '../../assets/images/logo/infuencer.png';
+import svi1 from '../../assets/images/logo/Web121.png';
+import svi2 from '../../assets/images/logo/AppUI11.png';
+import svi3 from '../../assets/images/logo/Socialmedia15.png';
+import svi4 from '../../assets/images/logo/SEO1.png';
+import svi5 from '../../assets/images/logo/BLSMO.png';
+import svi6 from '../../assets/images/logo/email01.png';
+import svi7 from '../../assets/images/logo/leadgeneration.png';
+import svi8 from '../../assets/images/logo/infuencer.png';
 import teci1 from '../../assets/images/html.png';
 import teci2 from '../../assets/images/css.png';
 import teci3 from '../../assets/images/js.png';
@@ -42,10 +41,12 @@ const Home = () => {
               Where IT & Digital Marketing Thrive!
 
             </div>
+
             <div className='img-container' data-aos="fade-left">
               <img src={Img1} alt="" />
 
             </div>
+            
           </div>
          
           <div className='btn-1' >
@@ -53,6 +54,7 @@ const Home = () => {
               Get the Quote
             </button>
           </div>
+          
           <div className='slider-banner'>
             {/* <SwiperSlider /> */}
 
@@ -109,58 +111,58 @@ const Home = () => {
           <div className='st'>
             <div className='sv-1'>
               <div data-aos="fade-left"><img src={svi1} className='sv-img1' />
-                <h3>Software Development</h3>
+                <h3>Web Development</h3>
                 <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-2'>
               <div data-aos="fade-right"><img src={svi2} className='sv-img1' />
-                <h3>Web Development</h3>
+                <h3>Application Development</h3>
                 <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-1'>
               <div data-aos="fade-left"><img src={svi3} className='sv-img1' />
-                <h3>Application Development</h3>
+                <h3>Social Media Management</h3>
                 <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-2'>
               <div data-aos="fade-right"><img src={svi4} className='sv-img1' />
-                <h3>Social Media Management</h3>
+                <h3>Search Engine Optimization</h3>
                 <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-1'>
               <div data-aos="fade-left"><img src={svi5} className='sv-img1' />
-                <h3>Search Engine Optimization</h3>
+                <h3>Social Media Optimization</h3>
                 <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-2'>
               <div data-aos="fade-right"><img src={svi6} className='sv-img1' />
-                <h3>Social Media Optimization</h3>
+                <h3>Email Marketing</h3>
                 <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-1'>
               <div data-aos="fade-left"><img src={svi7} className='sv-img1' />
-                <h3>Email Marketing</h3>
+                <h3>Lead Generation</h3>
                 <a href="services">Learn More</a>
               </div>
             </div>
             <div className='sv-2'>
               <div data-aos="fade-right"><img src={svi8} className='sv-img1' />
-                <h3>Lead Generation</h3>
-                <a href="services">Learn More</a>
-              </div>
-            </div>
-            <div className='sv-1'>
-              <div data-aos="fade-left"><img src={svi9} className='sv-img1' />
                 <h3>Influencer Marketing</h3>
                 <a href="services">Learn More</a>
               </div>
             </div>
+            {/* <div className='sv-1'>
+              <div data-aos="fade-left"><img src={svi9} className='sv-img1' />
+                <h3>Influencer Marketing</h3>
+                <a href="services">Learn More</a>
+              </div>
+            </div> */}
             
           </div>
         </div>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import LogoSlider from '../../common/LogoSlider';
 import abimg from '../../assets/images/mission.jpg';
 import video1 from '../../assets/images/video/video1.mp4';
-import teamMember1 from '../../assets/images/team/shubham.png';
+import teamMember1 from '../../assets/images/team/testimonials-4.jpg';
 import ScrollTopButton from '../../atoms/ScrollTopButton'
 
 const About = () => {
@@ -23,8 +23,7 @@ const About = () => {
       { id: 6, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'Lead Developer', linkedinUrl: '' },
       { id: 7, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'CEO', linkedinUrl: '' },
       { id: 8, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'Lead Developer', linkedinUrl: '' },
-      { id: 9, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'CEO', linkedinUrl: '' },
-      { id: 10, photo: teamMember1, name: 'Shubham Gaikwad', designation: 'Lead Developer', linkedinUrl: '' },
+    
       // Add more team members as needed 
     ];
 

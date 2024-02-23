@@ -139,9 +139,7 @@
         top: 49px;
         left: 84px;
     }
-    .we-container{
-        width: 77%;
-    }
+   
   }
   @media (max-width: 680px){
     .video-overlay {
@@ -155,9 +153,7 @@
         left: 65px;
     
     }
-    .we-container{
-        width: 77%;
-    }
+    
     .f-con h1{
         font-size: 20px;
     }
