@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext, useEffect,useState } from 'react';
+import { Context } from '../../../App';
 import '../../assets/css/containers/service.css';
 import si1 from "../../assets/images/services/software.jpg";
 import si2 from "../../assets/images/services/web.jpg";
@@ -10,8 +11,23 @@ import si7 from "../../assets/images/services/lead.jpg";
 import si8 from "../../assets/images/services/email.jpg";
 import si9 from "../../assets/images/services/influencer-marketing.jpg";
 import ScrollTopButton from '../../atoms/ScrollTopButton';
+import Loader from '../../screen/loader'
 
 const Services = () => {
+
+  const { setLoading } = useContext(Context);
+
+  const [showPageLoader , setShowPageLoader] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=>{setShowPageLoader(false)},1650)
+  },[])
+
+  if(showPageLoader){
+    return <Loader />
+  }else{
+
+
   return (
     <div className='service-main'>
       <h2 className='section-heading' data-aos="fade-down">Services</h2>
@@ -19,7 +35,7 @@ const Services = () => {
       
          Empower your success with our efficient and effective range of services
       </div>
-      <div className='service-container'>
+      <div className='service-container'> 
         <div className='s-sec1'>
           <div className='s-con1' data-aos="fade-right">
             <img src={si1} alt="" />
@@ -97,6 +113,7 @@ const Services = () => {
      
     </div>
   )
+}
 }
 
 export default Services;

@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import Loader from '../../screen/loader';
+import { Context } from '../../../App';
 import '../../assets/css/containers/about.css';
 import { FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -8,7 +10,11 @@ import video1 from '../../assets/images/video/video1.mp4';
 import teamMember1 from '../../assets/images/team/testimonials-4.jpg';
 import ScrollTopButton from '../../atoms/ScrollTopButton'
 
+
 const About = () => {
+
+ 
+
   const [teamMembers, setTeamMembers] = useState([]);
 
   useEffect(() => {
@@ -29,6 +35,16 @@ const About = () => {
 
     setTeamMembers(data);
   }, []);
+  
+  const [showPageLoader , setShowPageLoader] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=>{setShowPageLoader(false)},1650)
+  },[])
+
+  if(showPageLoader){
+    return <Loader />
+  }else{
 
   return (
     <div className='about-main'>
@@ -98,6 +114,7 @@ const About = () => {
       <ScrollTopButton/>
     </div>
   );
+}
 }
 
 export default About;

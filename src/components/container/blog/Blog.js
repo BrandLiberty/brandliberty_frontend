@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext, useEffect,useState } from 'react';
+import { Context } from '../../../App';
 import { Link } from 'react-router-dom';
 import '../../assets/css/containers/blog.css';
 import bli1 from '../../assets/images/services/application.jpg';
@@ -6,9 +7,22 @@ import bli2 from '../../assets/images/services/smm.jpg';
 import bli3 from '../../assets/images/services/software.jpg';
 import ScrollTopButton from '../../atoms/ScrollTopButton';
 import It_sector from '../../includes/It_sector'
+import Loader from '../../screen/loader';
 
 
 const Blog = () => {
+
+    const [showPageLoader , setShowPageLoader] = useState(true)
+
+    useEffect(()=>{
+      setTimeout(()=>{setShowPageLoader(false)},1650)
+    },[])
+  
+    if(showPageLoader){
+      return <Loader />
+    }else{
+  
+
     return (
         <div className='blog-main'>
             <div className='blog-head'>
@@ -56,6 +70,7 @@ const Blog = () => {
             <ScrollTopButton/>
         </div>
     )
+}
 }
 
 export default Blog;

@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useContext, useEffect,useState } from 'react';
+import { Context } from '../../../App';
 import '../../assets/css/containers/career.css';
 import ScrollTopButton from '../../atoms/ScrollTopButton';
 import cimg from '../../assets/images/Poster_Frames_Mockup_1.jpg';
 import cimg1 from '../../assets/images/BLwhyus7feb.jpg';
 import hwimg from '../../assets/images/howwehire.jpg';
 import ApplicationForm from '../../includes/ApplicationForm';
+import Loader from '../../screen/loader';
 
 const Career = () => {
+
+  const [showPageLoader , setShowPageLoader] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=>{setShowPageLoader(false)},1650)
+  },[])
+
+  if(showPageLoader){
+    return <Loader />
+  }else{
   return (
     <div className='career-main'>
       <div className='c-sec'>
@@ -107,6 +119,7 @@ const Career = () => {
     </div>
     
   )
+}
 }
 
 export default Career

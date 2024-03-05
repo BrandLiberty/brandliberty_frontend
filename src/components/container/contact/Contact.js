@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useContext, useEffect,useState } from 'react';
+import { Context } from '../../../App';
 import { useForm } from 'react-hook-form';
 import "../../assets/css/containers/contact.css";
 import { BsGeoAlt, BsEnvelope } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
 import ScrollTopButton from '../../atoms/ScrollTopButton';
+import Loader from '../../screen/loader'
 
 const Contact = () => {
+
+
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
     console.log(data); // You can handle form submission logic here
   };
+
+  const [showPageLoader , setShowPageLoader] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=>{setShowPageLoader(false)},1650)
+  },[])
+
+  if(showPageLoader){
+    return <Loader />
+  }else{
+
 
   return (
     <div className="contact-div">
@@ -70,6 +85,7 @@ const Contact = () => {
      <ScrollTopButton/>
     </div>
   );
+}
 }
 
 export default Contact;

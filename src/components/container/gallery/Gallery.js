@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react';
+import { Context } from '../../../App';
 import '../../assets/css/containers/gallery.css';
 import ScrollTopButton from '../../atoms/ScrollTopButton';
 import galleryImg1 from '../../assets/images/dog.jpg';
@@ -12,13 +13,27 @@ import galleryImg8 from '../../assets/images/dog.jpg';
 import galleryImg9 from '../../assets/images/dog.jpg';
 import galleryImg10 from '../../assets/images/dog.jpg';
 import galleryImg11 from '../../assets/images/dog.jpg';
+import Loader from '../../screen/loader'
 
 
 const Gallery = () => {
 
+ 
+
   const images = [galleryImg1, galleryImg2, galleryImg3, galleryImg4, galleryImg5, galleryImg5, galleryImg6, galleryImg7, galleryImg8,
     galleryImg9, galleryImg10, galleryImg11,
   ];
+  
+  const [showPageLoader , setShowPageLoader] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=>{setShowPageLoader(false)},1650)
+  },[])
+
+  if(showPageLoader){
+    return <Loader />
+  }else{
+
 
   return (
 
@@ -39,6 +54,7 @@ const Gallery = () => {
 
   );
 };
+}
 
 
 export default Gallery

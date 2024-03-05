@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext, useEffect,useState } from 'react';
+import { Context } from '../../../App';
 import '../../assets/css/containers/home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay,faCompass,faCog,faMap,faBinoculars } from '@fortawesome/free-solid-svg-icons';
@@ -23,10 +24,20 @@ import teci2 from '../../assets/images/css.png';
 import teci3 from '../../assets/images/js.png';
 import teci4 from '../../assets/images/rjs.png';
 import video1 from '../../assets/images/video/video1.mp4'
+import Loader from '../../screen/loader';
 
 
 const Home = () => {
- 
+  const [showPageLoader , setShowPageLoader] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=>{setShowPageLoader(false)},1650)
+  },[])
+
+  if(showPageLoader){
+    return <Loader />
+  }else{
+
   return (
     <section className='home-p'>
       <div className='main-container'>
@@ -271,6 +282,7 @@ const Home = () => {
        
     </section>
   )
+}
 }
 
 export default Home
