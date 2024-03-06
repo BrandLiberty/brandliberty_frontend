@@ -7,9 +7,11 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 5%;
+    padding-left: 3%;
+
 }
 .ab-head{
-    width: 30%;
+    width: 40%;
 }
 .ab-head h1{
     font-family: "Poppins", serif;

@@ -107,7 +107,7 @@ const ApplicationForm = () => {
           <option value="Content Writer">Content Writer</option>
           <option value="Frontend Developer">Frontend Developer</option>
           <option value="Backend Developer">Backend Developer</option>
-          <option value="UI/UX Designer">UI/UX Designer</option>
+          <option value="Social Media Management">Social Media Management</option>
           <option value="Graphic Designer">Graphic Designer</option>
         </select>
         {errors.post && <span className="error-message">{errors.post}</span>}

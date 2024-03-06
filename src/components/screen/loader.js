@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import '../assets/css/includes/loader.css';
-import loader from '../assets/images/load.gif';
+import loader from '../assets/images/loader.gif';
 
 export class Loader extends Component {
   render() {
