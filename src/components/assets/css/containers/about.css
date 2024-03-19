@@ -1,6 +1,7 @@
 .about-main{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 .ab-sec1{
     display: flex;
@@ -8,6 +9,7 @@
     align-items: center;
     padding-top: 5%;
     padding-left: 3%;
+    overflow: hidden;
 
 }
 .ab-head{
@@ -29,7 +31,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-left: 3%;
     padding-bottom: 2%;
 }
@@ -114,7 +116,7 @@
   
   .team-name {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
   
   .team-designation {
@@ -154,7 +156,11 @@
     }
     .ab-para{
         width: 90%;
-        
+        font-size: 1.1rem;
+    }
+
+    .ab-head2 p {
+        font-size: 1.1rem;
     }
 
     .ab-sec2{
@@ -187,13 +193,23 @@
         top: 47%;
         left: 0;
         width: 100%;
-        height: 51%;
+        height: 55%;
+        padding: 1px;
     }
     .team-name{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .team-designation{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 
+}
+
+@media (max-width: 480px) {
+    .ab-head h1 {
+        font-size: 1.5rem;
+    }
+    .team-container h1{
+        font-size: 1.5rem;
+    }
 }

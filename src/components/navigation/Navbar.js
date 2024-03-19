@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { NavLink,Link } from 'react-router-dom';
@@ -8,10 +8,18 @@ import { scrollToTop } from '../utils/scrollToTop';
 
 const Navbar1 = ({ isHomePage }) => {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const navbarRef = useRef(null);
 
     const toggleNav = () => {
         setIsNavOpen(!isNavOpen);
     }
+    
+  const handleOutsideClick = (event) => {
+    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+      setIsNavOpen(false);
+    }
+  };
+
 
     const [color, setColor] = useState(false);
 
@@ -25,8 +33,17 @@ const Navbar1 = ({ isHomePage }) => {
 
     window.addEventListener('scroll', changeColor);
 
+    useEffect(() => {
+        document.addEventListener('click', handleOutsideClick);
+    
+        return () => {
+          document.removeEventListener('click', handleOutsideClick);
+        };
+      }, []);
+    
+
     return (
-        <nav className={color || isHomePage ? 'navbar navbar-bg' : 'navbar'}>
+        <nav className={color || isHomePage ? 'navbar navbar-bg' : 'navbar'} ref={navbarRef}>
             <div className="nav-logo">
                 <Link to="/" onClick={() => { scrollToTop() }}><img src={logo} className="head-img-1" alt={"logo"} /></Link>
             </div>

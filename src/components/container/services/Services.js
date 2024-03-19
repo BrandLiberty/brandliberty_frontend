@@ -1,5 +1,6 @@
 import React, { useContext, useEffect,useState } from 'react';
 import { Context } from '../../../App';
+import { Link } from 'react-router-dom';
 import '../../assets/css/containers/service.css';
 import si1 from "../../assets/images/services/software.jpg";
 import si2 from "../../assets/images/services/web.jpg";
@@ -38,13 +39,18 @@ const Services = () => {
       <div className='service-container'> 
         <div className='s-sec1'>
           <div className='s-con1' data-aos="fade-right">
+            <Link  to="/it-Sector" > 
             <img src={si1} alt="" />
+            </Link>
             <div className="hover-info">
               <p>Software Development</p>
             </div>
+         
           </div>
           <div className='s-con2'data-aos="fade-left">
+            <Link to="/it-Sector">
             <img src={si2} alt="" />
+            </Link>
             <div className="hover-info">
               <p>Web Development</p>
             </div>
@@ -53,13 +59,17 @@ const Services = () => {
         <br /><br />
         <div className='s-sec1'>
           <div className='s-con2'data-aos="fade-right">
+          <Link to="/it-Sector">
             <img src={si3} alt="" />
+            </Link>
             <div className="hover-info">
               <p>Application Development</p>
             </div>
           </div>
           <div className='s-con1'data-aos="fade-left">
+          <Link to="/it-Sector">
             <img src={si4} alt="" />
+            </Link>
             <div className="hover-info">
               <p>Social media marketing</p>
             </div>
@@ -68,13 +78,17 @@ const Services = () => {
         <br /><br />
         <div className='s-sec1'>
           <div className='s-con1'data-aos="fade-right">
+          <Link to="/it-Sector">
             <img src={si5} alt="" />
+            </Link>
             <div className="hover-info">
               <p>Search Engine Optimization</p>
             </div>
           </div>
           <div className='s-con2' data-aos="fade-left">
+          <Link to="/it-Sector">
             <img src={si6} alt="" />
+            </Link>
             <div className="hover-info">
               <p>Search Engine Marketing</p>
             </div>
@@ -83,13 +97,17 @@ const Services = () => {
         <br /><br />
         <div className='s-sec1'>
           <div className='s-con2'data-aos="fade-right">
+          <Link to="/it-Sector">
             <img src={si7} alt="" />
+            </Link>
             <div className="hover-info">
               <p>Lead Genration</p>
             </div>
           </div>
           <div className='s-con1'data-aos="fade-left">
+          <Link to="/it-Sector">
             <img src={si8} alt="" />
+            </Link>
             <div className="hover-info">
               <p>Email Marketing</p>
             </div>
@@ -98,7 +116,9 @@ const Services = () => {
         <br /><br />
         <div className='s-sec2'>
           <div className='s-con1'data-aos="fade-right">
+          <Link to="/it-Sector">
             <img src={si9} alt="" />
+            </Link>
             <div className="hover-info">
               <p>Influencer Marketing</p>
             </div>

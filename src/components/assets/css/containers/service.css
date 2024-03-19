@@ -1,6 +1,6 @@
 .service-main {
     height: 100%;
-    width: 100vw;
+    width: 100%;
 }
 .service-main h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 45vw;
+    width: 45%;
     padding-left: 28%;
     font-size: 2.50rem;
     font-weight: 400;
@@ -20,10 +20,12 @@
 
 .service-container {
     padding-top: 5%;
+    overflow: hidden;
 }
 
 .s-sec1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -94,7 +96,7 @@
 
 @media (max-width: 768px) {
     .service-text {
-        width: 69vw;
+        width: 69%;
         padding-left: 17%;
     }
     .s-con1 img {
@@ -113,7 +115,7 @@
 
 @media (max-width: 630px) {
     .service-text {
-        width: 69vw;
+        width: 67%;
         font-size: 1.9rem;
     }
     .s-sec1 {
@@ -127,6 +129,7 @@
     .s-con2 img {
         height: 300px;
         width: 370px;
+        object-fit: cover;
     }
     
     
@@ -143,8 +146,12 @@
 
     .s-con1 img,
     .s-con2 img {
-        height: 274px;
-        width: 317px;
+        height: 270px;
+        width: 300px;
+    }
+    .service-text {
+        
+        font-size: 1.5rem;
     }
     
 

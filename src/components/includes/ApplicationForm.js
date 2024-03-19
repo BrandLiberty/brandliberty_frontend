@@ -105,6 +105,8 @@ const ApplicationForm = () => {
         <select name="post" value={formData.post} onChange={handleChange}>
           <option value="">Select Post</option>
           <option value="Content Writer">Content Writer</option>
+          <option value="Sales Executive">Sales Executive</option>
+          <option value="Full-stack Developer">Full-stack Developer</option>
           <option value="Frontend Developer">Frontend Developer</option>
           <option value="Backend Developer">Backend Developer</option>
           <option value="Social Media Management">Social Media Management</option>

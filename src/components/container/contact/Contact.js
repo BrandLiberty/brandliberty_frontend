@@ -18,6 +18,8 @@ const Contact = () => {
 
   const [showPageLoader , setShowPageLoader] = useState(true)
 
+  
+
   useEffect(()=>{
     setTimeout(()=>{setShowPageLoader(false)},1650)
   },[])
@@ -39,7 +41,7 @@ const Contact = () => {
             <BsGeoAlt className="contact-icon-m1" />
             <h1>Location</h1>
             <p className="contact-t2">Office No.2 First Floor, 
-              Dattatry Sadan 408 Narayan peth pune -411030
+              Dattatry Sadan 408 Narayan peth pune - 411030
               India</p>
           </div>
 
@@ -52,7 +54,7 @@ const Contact = () => {
           <div className="contact-box-b1 bl-3" data-aos="zoom-in-down">
             <BsEnvelope className="contact-icon-m1 l1" />
             <h1>Email</h1>
-            <p className="contact-t2 lsc1">info@.brandliberty.in</p>
+            <p className="contact-t2 lsc1">info@brandliberty.in</p>
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 /* ImageGallery.css */
 .gallery-container{
-    /* background-color: rgb(227, 227, 227); */
+   
     height: 100%;
     width: 100%;
     padding-bottom: 2%;
@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
     gap: 20px;
+    padding: 5%;
   }
   
   .image-gallery img {

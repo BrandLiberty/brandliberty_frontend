@@ -51,6 +51,7 @@
   @media (max-width: 768px) {
     .application-form {
       padding: 20px;
+      max-width: 300px;
     }
   }
   

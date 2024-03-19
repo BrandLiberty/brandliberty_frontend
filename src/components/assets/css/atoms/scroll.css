@@ -29,7 +29,7 @@
   @media screen and (max-width: 768px) {
     .scroll-top-btn {
       bottom: 10px;
-      right: 10px;
+      right: 30px;
       font-size: 7px;
     }
   }

@@ -38,18 +38,29 @@ const Career = () => {
 
   const openings = [
     {
-      title: 'Content Writer',
+      title: 'Sales Executive',
       experience: '0 to 2 years',
       payScale: '15K to 25K',
       responsibilities: [
-        'Present, promote, and sell products/services using solid arguments to existing and prospective customers.',
-        'Perform cost-benefit and needs analysis of existing/potential customers to meet their needs.',
-        'Establish, develop, and maintain positive business and customer relationships.'
+        ' Present, promote, and sell products/services using solid arguments to existing and prospective customers.',
+        ' Perform cost-benefit and needs analysis of existing/potential customers to meet their needs.',
+        ' Establish, develop, and maintain positive business and customer relationships.',
+        ' Reach out to customer leads through cold calling.',
+        ' Expedite the resolution of customer problems and complaints to maximize satisfaction.',
+        ' Achieve agreed upon sales targets and outcomes within the schedule.',
+        ' Coordinate sales efforts with team members and other departments.',
+        ' Analyze the territory/market’s potential, track sales, and status reports',
+        ' Supply management with reports on customer needs, problems, interests, competitive activities, and potential for new products and services.',
+        ' Keep abreast of best practices and promotional trends.',
+        ' Continuously improve through feedback.'
       ],
       skills: [
         'Communication skills',
         'Negotiation skills',
-        'Interpersonal skills'
+        'Interpersonal skills',
+        'Excellent knowledge of MS Office.',
+        'Highly motivated and target is driven with a proven track record in sales.',
+        'Relationship management skills and openness to feedback',
       ],
       perks: [
         'Certificate',
@@ -62,14 +73,25 @@ const Career = () => {
       experience: '0 to 2 years',
       payScale: '15K to 25K',
       responsibilities: [
-        'Present, promote, and sell products/services using solid arguments to existing and prospective customers.',
-        'Perform cost-benefit and needs analysis of existing/potential customers to meet their needs.',
-        'Establish, develop, and maintain positive business and customer relationships.'
+        ' Present, promote, and sell products/services using solid arguments to existing and prospective customers.',
+        ' Perform cost-benefit and needs analysis of existing/potential customers to meet their needs.',
+        ' Establish, develop, and maintain positive business and customer relationships.',
+        ' Reach out to customer leads through cold calling.',
+        ' Expedite the resolution of customer problems and complaints to maximize satisfaction.',
+        ' Achieve agreed upon sales targets and outcomes within the schedule.',
+        ' Coordinate sales efforts with team members and other departments.',
+        ' Analyze the territory/market’s potential, track sales, and status reports',
+        ' Supply management with reports on customer needs, problems, interests, competitive activities, and potential for new products and services.',
+        ' Keep abreast of best practices and promotional trends.',
+        ' Continuously improve through feedback.'
       ],
       skills: [
         'Communication skills',
         'Negotiation skills',
-        'Interpersonal skills'
+        'Interpersonal skills',
+        'Excellent knowledge of MS Office.',
+        'Highly motivated and target is driven with a proven track record in sales.',
+        'Relationship management skills and openness to feedback',
       ],
       perks: [
         'Certificate',
@@ -82,14 +104,25 @@ const Career = () => {
       experience: '0 to 2 years',
       payScale: '15K to 25K',
       responsibilities: [
-        'Present, promote, and sell products/services using solid arguments to existing and prospective customers.',
-        'Perform cost-benefit and needs analysis of existing/potential customers to meet their needs.',
-        'Establish, develop, and maintain positive business and customer relationships.'
+        ' Present, promote, and sell products/services using solid arguments to existing and prospective customers.',
+        ' Perform cost-benefit and needs analysis of existing/potential customers to meet their needs.',
+        ' Establish, develop, and maintain positive business and customer relationships.',
+        ' Reach out to customer leads through cold calling.',
+        ' Expedite the resolution of customer problems and complaints to maximize satisfaction.',
+        ' Achieve agreed upon sales targets and outcomes within the schedule.',
+        ' Coordinate sales efforts with team members and other departments.',
+        ' Analyze the territory/market’s potential, track sales, and status reports',
+        ' Supply management with reports on customer needs, problems, interests, competitive activities, and potential for new products and services.',
+        ' Keep abreast of best practices and promotional trends.',
+        ' Continuously improve through feedback.'
       ],
       skills: [
         'Communication skills',
         'Negotiation skills',
-        'Interpersonal skills'
+        'Interpersonal skills',
+        'Excellent knowledge of MS Office.',
+        'Highly motivated and target is driven with a proven track record in sales.',
+        'Relationship management skills and openness to feedback',
       ],
       perks: [
         'Certificate',
@@ -102,14 +135,25 @@ const Career = () => {
       experience: '0 to 2 years',
       payScale: '15K to 25K',
       responsibilities: [
-        'Present, promote, and sell products/services using solid arguments to existing and prospective customers.',
-        'Perform cost-benefit and needs analysis of existing/potential customers to meet their needs.',
-        'Establish, develop, and maintain positive business and customer relationships.'
+        ' Present, promote, and sell products/services using solid arguments to existing and prospective customers.',
+        ' Perform cost-benefit and needs analysis of existing/potential customers to meet their needs.',
+        ' Establish, develop, and maintain positive business and customer relationships.',
+        ' Reach out to customer leads through cold calling.',
+        ' Expedite the resolution of customer problems and complaints to maximize satisfaction.',
+        ' Achieve agreed upon sales targets and outcomes within the schedule.',
+        ' Coordinate sales efforts with team members and other departments.',
+        ' Analyze the territory/market’s potential, track sales, and status reports',
+        ' Supply management with reports on customer needs, problems, interests, competitive activities, and potential for new products and services.',
+        ' Keep abreast of best practices and promotional trends.',
+        ' Continuously improve through feedback.'
       ],
       skills: [
         'Communication skills',
         'Negotiation skills',
-        'Interpersonal skills'
+        'Interpersonal skills',
+        'Excellent knowledge of MS Office.',
+        'Highly motivated and target is driven with a proven track record in sales.',
+        'Relationship management skills and openness to feedback',
       ],
       perks: [
         'Certificate',
@@ -127,7 +171,8 @@ const Career = () => {
       <div className='career-main'>
         <div className='c-sec'>
           <div className='c-head'>
-            <h2 className='section-heading2' data-aos="fade-down">Career</h2>
+         <h2 className='section-heading2' data-aos="fade-down">Career</h2>
+           
             <h1 data-aos="fade-right">Shape The Future Of Technology & Digital Marketing</h1>
             <p data-aos="fade-right">Our company understands the importance of technology and digital marketing in our success,
               and we are committed to investing in these areas to remain on the cutting edge of innovation.
@@ -139,7 +184,7 @@ const Career = () => {
             <img src={cimg} alt="" />
           </div>
         </div>
-        <br />
+        {/* <br /> */}
         <div className='c-sec2'>
           <div className='c-img2' data-aos="fade-right">
             <img src={cimg1} alt="" />
@@ -154,6 +199,7 @@ const Career = () => {
             </p>
           </div>
         </div>
+        
 
         <section id="faq" className="openings" ref={openingsRef}>
         <div className="op-container" data-aos="fade-up">

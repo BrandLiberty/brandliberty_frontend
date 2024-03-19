@@ -1,5 +1,6 @@
 import React, { useContext, useEffect,useState } from 'react';
 import { Context } from '../../../App';
+import { Link } from 'react-router-dom';
 import '../../assets/css/containers/home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay,faCompass,faCog,faMap,faBinoculars } from '@fortawesome/free-solid-svg-icons';
@@ -61,15 +62,17 @@ const Home = () => {
           </div>
          
           <div className='btn-1' >
+            <Link to={'/contact'}>
             <button type="button" class="slide-btn" >
               Get the Quote
             </button>
+            </Link>
           </div>
           
-          <div className='slider-banner'>
+          {/* <div className='slider-banner'> */}
             {/* <SwiperSlider /> */}
 
-          </div>
+          {/* </div> */}
 
         </div>
 
@@ -86,7 +89,7 @@ const Home = () => {
             <button type="button" class="con-btn" >
               Contact Us
             </button>
-          </div>
+        </div>
 
       </div>
       {/* about-sec */}
@@ -121,7 +124,7 @@ const Home = () => {
           <p data-aos="fade-right">We are a leading IT solution and digital marketing company,empowering business with innovative technology and result- driven marketing strategies.</p>
           <div className='st'>
             <div className='sv-1'>
-              <div data-aos="fade-left"><img src={svi1} className='sv-img1' />
+              <div className='sv-1-text' data-aos="fade-left"><img src={svi1} className='sv-img1' />
                 <h3>Web Development</h3>
                 <a href="services">Learn More</a>
               </div>

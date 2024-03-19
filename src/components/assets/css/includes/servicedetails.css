@@ -9,20 +9,26 @@
   
   /* Portfolio Image */
   .portfolio-image {
-    width: 100%;
-    height: auto;
+    width: 60%;
+    height: 40%;
+    align-items: center;
+    align-content: center;
+    padding-top: 3%;
+    padding-left: 20%;
   }
   
   /* Portfolio Info */
   .portfolio-info {
-    padding: 20px;
+    padding: 30px;
     background-color: #f9f9f9;
     border-radius: 5px;
   }
   
   .portfolio-info h3 {
-    font-size: 24px;
-    color: #333;
+    font-size: 25px;
+    /* color: #333; */
+    color: #FC0606;
+    padding-left: 3%;
   }
   
   .portfolio-info ul {
@@ -33,5 +39,17 @@
     font-size: 16px;
     color: #666;
     line-height: 1.6;
+  }
+
+  @media (max-width: 768px){
+    .portfolio-info h3 {
+      padding-left: 6%;
+    }
+    .portfolio-image {
+      width: 79%;
+      height: 68%;
+      padding-top: 5%;
+      padding-left: 12%;
+  }
   }
   

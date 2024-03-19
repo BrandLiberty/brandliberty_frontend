@@ -1,18 +1,21 @@
 import React from 'react'
-import '../assets/css/includes/blogdetails.css'
+import '../assets/css/includes/servicedetails.css';
+import it_img from '../assets/images/services/software.jpg';
+import ScrollTopButton from '../atoms/ScrollTopButton';
+
 
 const It_sector = () => {
   return (
     <section id="portfolio-details" className="portfolio-details">
       <div className="port-container">
-        <div className="row gy-4">
+        <div className="row1 gy-4">
           <div className="col-lg-12">
-            <img src="assets/img/blog/it_1.jpg" alt="" className="portfolio-image" />
+            <img src={it_img} alt="" className="portfolio-image" />
           </div>
 
           <div className="col-lg-12">
             <div className="portfolio-info">
-              <h3> Tech Adventures! </h3>
+              <h3> Software Development </h3>
               <ul>
                 <li>
                   Hey there, fellow tech adventurers!<br />
@@ -62,15 +65,15 @@ const It_sector = () => {
                   So, whether you are a coding rookie or a seasoned pro, remember that
                   the digital universe is your Playground- Go forth and build wonders!<br /><br />
 
-                  With Creativity,
-                  Aparna Sharma<br /><br />
-
-                  P.S.- And that's a wrap, fellow adventurers! Happy coding!
+                
                 </li>
               </ul>
             </div>
           </div>
+          
         </div>
+        {/* Scroll-to-top button */}
+        <ScrollTopButton/>
       </div>
     </section>
   )
